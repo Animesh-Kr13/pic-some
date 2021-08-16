@@ -1,5 +1,5 @@
 import React from "react"
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import './App.css';
 import Header from "./Components/Header"
 import Cart from "./Pages/Cart"
@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Header />
-      <h1>Home Page</h1>
+
       <Switch>
          <Route exact path="/">
            <Photos />
