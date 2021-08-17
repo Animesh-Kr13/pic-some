@@ -25,6 +25,10 @@ main.cart-page {
   padding: 10px;
 }
 
+.heading{
+  font-size: 2rem;
+}
+
 .cart-page > h1 {
   text-align: center;
 }
@@ -135,3 +139,35 @@ a {
 a:visited { color: var(--light-blue); }
 a:hover { color: var(--light-blue); }
 a:active { color: var(--light-blue); }
+
+@media (min-width: 670px) {
+
+  header{
+    padding: 0 2em;
+  }
+
+  .heading{
+    font-size: 2.5rem;
+  }
+
+  .cartsize {
+    width: 60px;
+    height: 60px;
+  }
+
+  main.photos {
+    padding: 20px;
+    grid-gap: 4px;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (min-width: 760px) {
+  main.photos {
+    padding: 25px;
+    grid-gap: 5px;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
